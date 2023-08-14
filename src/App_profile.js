@@ -55,6 +55,7 @@ function AppProfile() {
         <div id = "namepos">
           {userId}
         </div>
+
         <div id = "followpos">
           <FollowerModal/> 
         </div>

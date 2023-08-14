@@ -18,6 +18,8 @@ import FollowingList from './following';
 
 import Place from './board/Place'
 import MyMap from './mymap';
+import ChangeProfile from './profileChange';
+import { List } from '@mui/material';
 
 
 
@@ -31,6 +33,7 @@ function App() {
         <Route path='/setting' element={<Setting />} />
         <Route path="/setting/change" element={<ChangePw />} />
         <Route path='/setting/withdraw' element={<Withdraw />} />
+        <Route path='/setting/changeprofile' element={<ChangeProfile/>}/>
         <Route path='/verify/send' element={<NeedVerify />} />
         <Route path='/verify' element={<Verify />} />
         <Route path='/find' element={<FindPw />} />
@@ -44,6 +47,7 @@ function App() {
 
         {/** route 동적 이동 **/}
         <Route path={'/board/:place'} element={<Place/>}/>
+        <Route path={'/mymap/:List'} element={<List/>}/>
       </Routes>
     </BrowserRouter>
   )

@@ -62,6 +62,9 @@ function MyMap() {
         <div id = "followingpos">
           <FollowingModal/>
         </div>
+        <div id = "postspos">
+          0posts
+        </div>
       </div>
       <div id="mapcontents">
         <MyKakaoMap/>

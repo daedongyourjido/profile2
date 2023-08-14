@@ -177,7 +177,7 @@ export const MyKakaoMap = (props) => {
 
           // route path 동적 지정
           kakao.maps.event.addListener(polygon, 'click', function () {
-            const url = '/board/' + name;
+            const url = '/mymap/' + name;
             navigate(url);
           });
       }
